@@ -1,0 +1,10 @@
+python
+def find_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Example Usage
+a = 56
+b = 98
+print(find_gcd(a, b))  # Output: 14
