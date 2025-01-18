@@ -1,0 +1,3 @@
+transpose
+def transpose_matrix(matrix):
+    return list(zip(*matrix))
