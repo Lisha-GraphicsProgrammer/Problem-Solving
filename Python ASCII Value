@@ -1,0 +1,15 @@
+Python
+def char_to_ascii(character):
+    # Initialize a variable to hold the result
+    ascii_value = 0
+    # Iterate through all possible characters in the ASCII range
+    for i in range(128):  # ASCII codes range from 0 to 127
+        if chr(i) == character:
+            ascii_value = i
+            break
+    return ascii_value
+
+# Example usage
+char = 'A'
+ascii_code = char_to_ascii(char)
+print(f"The ASCII value of '{char}' is {ascii_code}")
