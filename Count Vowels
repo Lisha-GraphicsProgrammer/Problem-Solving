@@ -1,0 +1,12 @@
+def count_vowels(string):
+    vowels = 'aeiou'
+    count = 0
+    for char in string:
+        for vowel in vowels:
+            if char == vowel or char == vowel.upper():
+                count += 1
+    return count
+
+# Example Usage
+sentence = "Hello, World!"
+print(count_vowels(sentence))  # Output: 3
