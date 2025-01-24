@@ -1,0 +1,17 @@
+def first_and_last_digit(num):
+                                     # Convert number to string to easily access the digits
+    num_str = str(num)
+    
+                                                 # First digit
+    first_digit = num_str[0]
+    
+                                                      # Last digit
+    last_digit = num_str[-1]
+    
+                                                            # Print the results
+    print(f"First digit: {first_digit}")
+    print(f"Last digit: {last_digit}")
+
+# Example usage
+num = int(input("Enter a number: "))
+first_and_last_digit(num)
